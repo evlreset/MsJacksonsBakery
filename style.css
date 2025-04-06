@@ -2,12 +2,12 @@ html{
 	scroll-behavior: smooth;
 }
 body{
-	background-color: pink;
+	background-color: white;
 	width: 100%;
 	margin: auto;
 	height: 2000;
 }
-.header{
+.headerback{
 	display: flex;
 	background-color: lightgray;
 	width: auto;
@@ -72,19 +72,21 @@ nav a:hover {
   color: black;
  }
 
-h1{
+.header{
 	width: 100%;
+	font-size: 64px;
 }
 /*Products Page*/
 .productsbody{
 	background-color: white;
 	width: auto;
-	height: 2000px;
+	height: auto;
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
 	justify-content: space-evenly;
 	padding: 50px;
+	gap: 30px;
 }
 .pbox{
 	border: dashed, black;
@@ -142,7 +144,9 @@ javascript later for the buttons*/
 	border: solid, black;
 	box-sizing: border-box;
 }
-/*cart*/
+/*shopping cart. I hope to have this be something
+that comes out from the slide upon clicking it, and
+also allow the user to hide it*/
 .cartbody{
 	position: fixed;
 	right: 0px;
@@ -154,6 +158,106 @@ javascript later for the buttons*/
 	border-radius: 25px 0 0 25px;
 	padding: 10px;
 }
+
 .checkout{
-	
+	position: fixed;
+	height: 60px;
+	width: 200px;
+	border-radius: 15px;
+	background-color: black;
+	color: white;
+	font-size: 36px;
+	bottom: 100px;
+	text-align: center;
+	padding-top: 10px;
+	right: 50px;
+}
+.checkout:hover{
+	background-color: white;
+	color: black;
+	border: solid, black;
+}
+/*checkout page*/
+.checkoutbody{
+	margin-left: 30px;
+	margin-top: 20px;
+	position: fixed;
+	display: flex;
+	width: 1400px;
+	height: 800px;
+	z-index: 99;
+	background-color: white;
+	border: solid, black;
+	border-radius: 25px;
+	flex-direction: row;
+	justify-content: space-evenly;
+	padding: 25px;
+	flex-wrap: wrap;
+}
+
+.checkbox{
+	background-color: pink;
+	width: 450px;
+	height: 700px;
+	display: flex;
+	flex-direction: column;
+}/*the rest of the information will be added
+with javascript and html*/
+
+/*about page*/
+.aboutbox{
+	height: 400px;
+	width: 600px;
+	margin-left: 50px;
+	background-color: white;
+	text-align: center;
+	border-radius:25px;
+	padding-left: 50px;
+	display: flex;
+	justify-content: left;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.contactback{
+	display: flex;
+	background-color: lightgray;
+	width: auto;
+	height: 400px;
+	align-items: center;
+	justify-content: flex-start;
+}
+.wrapper{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	height: auto;
+	justify-content: space-evenly;
+}
+.text{
+	height: 300px;
+	width: 300px;
+	border: dashed, gray;
+}
+.footer{
+	height: 80px;
+	width: 100%;
+	background-color: pink;
+	box-sizing: border-box;
+	padding: 20px;
+
+}
+.footer a{
+	float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.footer a:hover{
+	color: black;
+}
+.footer a.split{
+	float: right;
 }
